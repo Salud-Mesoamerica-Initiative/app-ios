@@ -1,0 +1,16 @@
+<ion-view cache-view="false" title="Synchronizing, Please Wait...">
+    <ion-content class="has-header" padding="true" overflow-scroll="true" scroll="true">
+	<ion-spinner class="spinner-energized"></ion-spinner>
+        <ion-item ng-repeat="item in locations">
+		    <p>
+			Successfully Synchronized Location : {{item.title}} 
+			</p>
+			<p>
+			Successfully Synchronized Location Visualization : {{item.title}}
+			</p>
+		</ion-item>
+		<ion-item ng-repeat="item in indicators">
+			Successfully Synchronized Indicator : {{item.title}}	
+		</ion-item>
+    </ion-content>
+</ion-view>

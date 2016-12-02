@@ -1,0 +1,27 @@
+<ion-view cache-view="false" title="Score : {{localidad}}">
+    <ion-content class="has-header" padding="true" overflow-scroll="true" scroll="true">
+        <ion-list>
+            <ion-item class="item item-text-wrap" ng-repeat="item in lista_indicadores_porcentaje">
+			<div>
+				<!-- <div ng-if="item.pase == false && item.bandera == 0" >
+					<ion-item-content>{{item.titulo}}</ion-item-content>
+					<ion-item-content>No Data</ion-item-content>
+				</div> -->
+				<div>
+					<ion-item-content>{{item.titulo}}</ion-item-content>
+					<ion-item-content>{{item.percentage}} %</ion-item-content>
+				</div>
+			<!-- <div ng-if="item.pase == true" >
+				<ion-item-content>{{item.titulo}}</ion-item-content>
+				<ion-item-content>{{item.porciento}} %</ion-item-content>
+			</div> -->
+			</div>
+			</ion-item>
+        </ion-list>
+		<ion-item class="button button-dark button-block ">Percent of GOALS Met: {{porciento_total}} %</ion-item>
+		<ion-item>{{txt}}</ion-item>
+    </ion-content>
+	<ion-footer-bar>
+	<button class="button button-dark button-block " ng-click="pasar()">Submit Score</button>	
+	</ion-footer-bar> 
+</ion-view>

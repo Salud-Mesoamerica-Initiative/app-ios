@@ -1,0 +1,15 @@
+<ion-view cache-view="false" title="Graphic Location : {{localidad}}">
+   <ion-content>
+     <ion-list>
+       <ion-item class="center"><h1>All Indicators</h1></ion-item>
+       <ion-item class="center">Click legend to select lines</ion-item>
+     </ion-list>
+			<canvas id="line" style="width: 100%; height: auto;"  class="chart chart-line chart-xs" chart-data="data" chart-labels="labels" chart-series="series" chart-legend="false" chart-click="onClick" options="{
+				scaleShowHorizontalLines: true,
+				scaleShowVerticalLines: true,
+				bezierCurve: true,
+				datasetFill: false,
+				responsive: true}">
+			</canvas>
+  </ion-content>
+</ion-view>

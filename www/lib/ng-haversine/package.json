@@ -1,0 +1,81 @@
+{
+  "_args": [
+    [
+      "ng-haversine",
+      "C:\\Users\\Hector\\proy_BID"
+    ]
+  ],
+  "_from": "ng-haversine@*",
+  "_id": "ng-haversine@0.0.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/ng-haversine",
+  "_nodeVersion": "6.1.0",
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/ng-haversine-0.0.1.tgz_1464617288908_0.8997577838599682"
+  },
+  "_npmUser": {
+    "email": "vermicida@gmail.com",
+    "name": "vermicida"
+  },
+  "_npmVersion": "3.8.6",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "ng-haversine",
+    "raw": "ng-haversine",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "*",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/ng-haversine/-/ng-haversine-0.0.1.tgz",
+  "_shasum": "d8c7e4fe7aa3ffc8bd4ac4ec746526337b31ba47",
+  "_shrinkwrap": null,
+  "_spec": "ng-haversine",
+  "_where": "C:\\Users\\Hector\\proy_BID",
+  "author": {
+    "email": "vermicida@gmail.com",
+    "name": "Diego Herrera"
+  },
+  "bugs": {
+    "url": "https://github.com/vermicida/ng-haversine/issues"
+  },
+  "dependencies": {},
+  "description": "ng-haversine is an AngularJS module that applies the Haversine formula to a pair of coordinates to calculate the distance between them.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "d8c7e4fe7aa3ffc8bd4ac4ec746526337b31ba47",
+    "tarball": "https://registry.npmjs.org/ng-haversine/-/ng-haversine-0.0.1.tgz"
+  },
+  "gitHead": "2ebd25b914b4f03733cda4e189146f19c4c9934b",
+  "homepage": "https://github.com/vermicida/ng-haversine#readme",
+  "keywords": [
+    "angular",
+    "angularjs",
+    "coords",
+    "distance",
+    "haversine",
+    "javascript"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "vermicida",
+      "email": "vermicida@gmail.com"
+    }
+  ],
+  "name": "ng-haversine",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vermicida/ng-haversine.git"
+  },
+  "scripts": {},
+  "version": "0.0.1"
+}

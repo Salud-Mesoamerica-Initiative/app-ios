@@ -1,0 +1,24 @@
+<ion-view cache-view="false" title={{survey.title}}>
+    <ion-content class="has-header" padding="true" overflow-scroll="true" scroll="false">
+        <div>
+            <p align="CENTER">
+                RECORD SAVED IN DRAFTS
+            </p>
+		</div><br><br><br><br><br><br><br>
+		<ion-item>
+		     <div  style="text-align: center">
+			  <h1>
+                SCORE : {{porcentaje}}
+			  </h1>
+			 </div> 
+        </ion-item>
+       <!--  <button class="button button-dark button-outline button-small">Choose Different Indicator</button>
+        <button class="button button-dark button-outline button-small">Repeat Indicator</button> -->
+    </ion-content>
+	<ion-footer-bar class="bar bar-dark">
+		<div class="button-bar">
+			<a class="button button-dark icon-left ion-clipboard " ng-click="click_boton_izquierdo()">Choose Different Indicator</a>
+			<a class="button button-dark icon-right ion-ios-redo-outline " ng-click="click_boton_derecho()">Repeat Indicator</a>
+		</div>	
+	</ion-footer-bar> 
+</ion-view>

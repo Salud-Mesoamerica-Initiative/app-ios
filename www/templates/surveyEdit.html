@@ -1,0 +1,35 @@
+<ion-view cache-view="false" title={{titulo_pagina}}>
+    <ion-content class="has-header" padding="true" overflow-scroll="true">
+	
+	<!-- <ionic-datepicker date="currentDate" min="minDate" max="maxDate" callback="datePickerCallback">
+		<button class="button button-block button-positive"> {{ currentDate | date:'MMMM/dd/yyyy' }} </button>
+	</ionic-datepicker> -->
+
+	<ion-item class="item-input">
+                <label class="item-input"  >
+                  <span class="input-label">Date</span>
+                  <input type="date" ng-model="fecha" >
+	</ion-item>
+	<ion-list>
+		<ion-item ng-repeat="item in survey" class="item item-text-wrap" >
+		    {{$index+1}}.- {{item.label}} {{n_preguntas[$index] = item.id;""}}
+			
+			<div ng-if="(item.field_type == 'TEXT' || item.field_type == 'TEXTAREA') && item.visible">
+				<div ng-init="valor[$index]=valor[$index]"></div>
+					<input type="text" id="{{item.id}}" ng-model="valor[$index]" ng-value="valor[$index]">
+			</div>
+			
+			<div ng-if=" item.field_type == 'CHECKBOX' && item.visible" >
+			    <div ng-init="valor[$index]=valor[$index]"></div><br>
+					<ion-radio  name="nombre-{{item.id}}" ng-model="valor[$index]" ng-value="0">NO</ion-radio>
+					<ion-radio  name="nombre-{{item.id}}" ng-model="valor[$index]" ng-value="-1">N/A</ion-radio>
+					<ion-radio  name="nombre-{{item.id}}" ng-model="valor[$index]" ng-value="1">YES</ion-radio>		
+			</div>
+		</ion-item> 
+     </ion-list>
+	
+    </ion-content>
+	<ion-footer-bar>
+	<button class="button button-dark button-block " ng-click="procesos()">Submit Survey</button>	
+	</ion-footer-bar> 
+</ion-view>

@@ -1,0 +1,13 @@
+<ion-view title="Setting">
+    <ion-content class="has-header" padding="true" overflow-scroll="true" scroll="false">
+        <form class="list">
+                <label class="item item-input" name="hostname">
+                <span class="input-label">HostName</span>
+                <input type="text" placeholder={{leer()}} ng-model="hostname">
+				</label>
+				<div class="spacer" style="height: 40px;"></div>
+                <button class="button button-positive button-block " ng-click="guardar(hostname)">Save Settings</button><br><br>
+				<button class="button button-positive button-clear button-block " ng-click="retorno()">Return Login</button>
+        </form> 		
+    </ion-content>
+</ion-view>

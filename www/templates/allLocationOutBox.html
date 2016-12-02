@@ -1,0 +1,13 @@
+<ion-view title="All Location OutBox">
+    <ion-content class="has-header" padding="true" overflow-scroll="true">
+        <button class="button button-energized button-block " ng-click="procesos()">Sync OutBox</button>
+        <ion-list>
+            <ion-item class="item item-text-wrap  " ng-repeat="item in lista_de_registros">
+				          {{item.title}} Location : {{item.titulo_localidad}} Indicator : {{item.titulo_indicador}} Timestamp : {{item.timestamp}} Percent {{item.score}}%
+			   </ion-item>
+         <ion-item class="item item-text-wrap  " ng-repeat="item in lista_scores">
+				          {{item.title}} Location : {{item.titulo_localidad}} Timestamp : {{item.timestamp}}
+			   </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

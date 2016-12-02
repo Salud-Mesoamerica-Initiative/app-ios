@@ -1,0 +1,14 @@
+<ion-view view view-title="Photo List">
+	<ion-header-bar class="bar-subheader">
+		<button class="button button-positive button-clear" ng-click="getPhoto('camera')">Capture New</button>																
+		<button class="button button-positive button-clear" ng-click="getPhoto('photolibrary')">From List</button>
+	</ion-header-bar>
+<ion-content>
+	<div class="card list" ng-repeat="photo in photos">
+		<div class="item item-image">
+			<img ng-src="{{photo}}" />
+		</div>
+	</div>
+</ion-content>
+</ion-view>
+ 
